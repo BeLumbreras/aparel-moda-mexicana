@@ -4,43 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Aparel Moda Mexicana » Inicio</title>
-    <link rel="stylesheet" href="css\estilos.css">
+    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\estilos.css">
 </head>
 <body>
     <div class="contenedor__principal">
-
-        <div id="barra__anuncio">
-            <p>ENVÍO GRATIS DESDE <span class="barra__anuncio__moneda">MXN$</span><span class="barra__anuncio__monto">800</span>
-            </p>
-        </div>
-
+        <!-- inicia HEADER -->
         <header class="header">
-            <div class="header__menu">
-                <div class="header__logo">
-                    <a href="index.html"><img src="images/Aparel-Moda-Mexicana-Logo-Blanco.svg" alt="Aparel Logo"></a>
-                    
-                </div>       
-                <nav class="header__menu">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="pages/playeras.html">Playeras</a></li>
-                        <li><a href="pages/zapatos.html">Zapatos</a></li>
-                        <li><a href="pages/blog.html">Blog</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>
-                        <li class="search_container" data-autocomplete-true=""> <form action="/search" class="search_form" _lpchecked="1"> <input type="hidden" name="type" value="product"> <span class="fas fa-search search-submit"></span> <input type="text" name="q" placeholder="Buscar" value="" autocapitalize="off" autocomplete="off" autocorrect="off"><div class="search__results-wrapper" style="display: none;"><ul class="search__results"></ul></div></form></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <div class="header__slide">
-                <div class="header__slide__portrait">
+            <!-- Inicia BARRA DE PROMOCIONES -->
+            <div id="barra__anuncio" class="py-3 bg-pink">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-12">
+                        <!-- Text -->
+                        <div class="text-center text-white">
+                        <span class="heading-xxs letter-spacing-xl">⚡️ ENVÍO GRATIS DESDE <span class="barra__anuncio__moneda">MXN$</span><span class="barra__anuncio__monto">800</span> ⚡️</span>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
-        </header>
+            <!-- Finaliza BARRA DE PROMOCIONES -->
 
+            <!-- Inicia MENÚ DE NAVEGACIÓN -->
+            <nav class="navbar navbar-expand-xl navbar-dark bg-black">
+                <div class="container">
+                    <a class="navbar-brand d-xl-none header__logo" href="index.html">
+                        <img src="images/Aparel-Moda-Mexicana-Logo-Blanco.svg" alt="Aparel Logo"></a>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+                        <ul class="navbar-nav mx-2 mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/playeras.html">Playeras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/zapatos.html">Zapatos</a>
+                            </li>
+                        </ul>
+
+                        <a class="navbar-brand mx-4 d-none d-xl-block header__logo" href="index.html">
+                            <img src="images/Aparel-Moda-Mexicana-Logo-Blanco.svg" alt="Aparel Logo">
+                        </a>
+
+                        <ul class="navbar-nav mx-2 mb-2 mb-xl-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="pages/blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pages/playeras.html">Contacto</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Inicia CAROUSEL -->
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1500">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/cover-1.jpg" class="d-block w-100" alt="Patricio Tenis">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/cover-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/cover-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </header><!-- Finaliza HEADER -->
+
+        <!-- inicia sección principal de contenido -->
         <main class="main">
             
             <section class="main__contenido">
@@ -118,13 +196,15 @@
                     </tr>
                 </table>
             </section>    
-        </main>
+        </main><!-- finaliza sección principal de contenido -->
 
+        <!-- inicia sidebar derecho -->
         <aside class="aside__anuncio">
             <section class="aside__anuncio__inicio">
             </section>
-        </aside>
+        </aside><!-- finaliza sidebar derecho -->
 
+        <!-- inicia footer -->
         <footer class="footer">
             <ul class="footer__cliente">
                 <li><h4 class="footer__title">Ayuda al cliente</h4>
@@ -167,7 +247,10 @@
             <div class="footer__text">
                 Aparel Moda Mexicana Todos los Derechos Reservados ® 2021
             </div>
-        </footer>
+        </footer><!-- Finaliza FOOTER -->
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 </body>
 </html>

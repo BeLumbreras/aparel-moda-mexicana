@@ -10,6 +10,13 @@
     text-decoration: none;
 }
 
+.bg-pink {
+    background-color: #FE006F;
+}
+.bg-black {
+    background-color: #000;
+}
+
 /* GRID AREA PRINCIPAL*/
 .contenedor__principal {
     display: grid;
@@ -40,10 +47,7 @@ footer {
 
 /* BARRA SUPERIOR ANUNCIO */
 #barra__anuncio {
-    background-color: #FE006F;
     color:#FFF;
-    padding: 15px;
-    text-align: center;
 }
 #barra__anuncio .barra__anuncio__moneda,
 #barra__anuncio .barra__anuncio__monto {
@@ -52,23 +56,23 @@ footer {
 }
 
 /* HEADER */
-header .header__menu {
+.header__menu {
     display: flex;
     background-color: #000;
     justify-content: space-around;
     align-items:flex-end;
     padding:20px;
 }
-.header .header__logo img {
+.header__logo img {
     width: 80px;
     height: auto;
 }
-.header .header__logo img:hover {
+.header__logo img:hover {
     width: 80px;
     height: auto;
     transform: rotate(90deg);
 }
-.header .header__menu ul {
+.header__menu ul {
     display: flex;
 }
 .header .header__menu ul li a {
@@ -325,4 +329,11 @@ footer.footer ul.footer__contacta li p a:hover,
 footer.footer li a i.fab.fa-facebook:hover,
 footer.footer li a i.fab.fa-instagram:hover {
     color:#FE006F;
+}
+
+/* BOOTSTRAP CSS MY RULES */
+@media (min-width: 1200px) {   
+    .navbar-expand-xl .navbar-collapse {
+        justify-content: center;
+    }
 }
