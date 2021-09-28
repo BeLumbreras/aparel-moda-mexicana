@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Aparel Moda Mexicana » Inicio</title>
     
@@ -14,196 +14,189 @@
     <link rel="stylesheet" href="css\estilos.css">
 </head>
 <body>
-    <div class="contenedor__principal">
-        <!-- inicia HEADER -->
-        <header class="header">
-            <!-- Inicia BARRA DE PROMOCIONES -->
-            <div id="barra__anuncio" class="py-3 bg-pink">
-                <div class="container">
-                    <div class="row">
-                    <div class="col-12">
-                        <!-- Text -->
-                        <div class="text-center text-white">
-                        <span class="heading-xxs letter-spacing-xl">⚡️ ENVÍO GRATIS DESDE <span class="barra__anuncio__moneda">MXN$</span><span class="barra__anuncio__monto">800</span> ⚡️</span>
-                        </div>
+    <!-- inicia HEADER -->
+    <header class="header">
+        <!-- Inicia BARRA DE PROMOCIONES -->
+        <div id="barra__anuncio" class="py-3 bg-pink">
+            <div class="container">
+                <div class="row">
+                <div class="col-12">
+                    <!-- Text -->
+                    <div class="text-center">
+                        <span>⚡️ ENVÍO GRATIS DESDE <span class="barra__anuncio__moneda">MXN$</span><span class="barra__anuncio__monto">800</span> ⚡️</span>
                     </div>
-                    </div>
+                </div>
                 </div>
             </div>
-            <!-- Finaliza BARRA DE PROMOCIONES -->
+        </div><!-- Finaliza BARRA DE PROMOCIONES -->
 
-            <!-- Inicia MENÚ DE NAVEGACIÓN -->
-            <nav class="navbar navbar-expand-xl navbar-dark bg-black">
-                <div class="container">
-                    <a class="navbar-brand d-xl-none header__logo" href="index.html">
-                        <img src="images/Aparel-Moda-Mexicana-Logo-Blanco.svg" alt="Aparel Logo"></a>
+        <!-- Inicia MENÚ DE NAVEGACIÓN -->
+        <nav class="header__menu navbar navbar-expand-xl navbar-dark bg-black">
+            <div class="container">
+                <a class=" header__logo navbar-brand d-xl-none" href="index.html">
+                    <img src="images/Aparel-Moda-Mexicana-Logo-Blanco.svg" alt="Aparel Logo"></a>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+                    <ul class="navbar-nav mx-2 mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/playeras.html">Playeras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/zapatos.html">Zapatos</a>
+                        </li>
+                    </ul>
+
+                    <a class="navbar-brand mx-4 d-none d-xl-block header__logo" href="index.html">
+                        <img src="images/Aparel-Moda-Mexicana-Logo-Blanco.svg" alt="Aparel Logo">
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <ul class="navbar-nav mx-2 mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/playeras.html">Contacto</a>
+                        </li>
+                    </ul>
 
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
-                        <ul class="navbar-nav mx-2 mb-2 mb-xl-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/playeras.html">Playeras</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/zapatos.html">Zapatos</a>
-                            </li>
-                        </ul>
-
-                        <a class="navbar-brand mx-4 d-none d-xl-block header__logo" href="index.html">
-                            <img src="images/Aparel-Moda-Mexicana-Logo-Blanco.svg" alt="Aparel Logo">
-                        </a>
-
-                        <ul class="navbar-nav mx-2 mb-2 mb-xl-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="pages/blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/playeras.html">Contacto</a>
-                            </li>
-                        </ul>
-
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-outline-danger" type="submit">Buscar</button>
-                        </form>
-                    </div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-pink" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
-            
-            <!-- Inicia CAROUSEL -->
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1500">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        </nav>
+        
+        <!-- Inicia CAROUSEL -->
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1500">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/cover-1.jpg" class="d-block w-100" alt="Patricio Tenis">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/cover-1.jpg" class="d-block w-100" alt="Patricio Tenis">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/cover-2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/cover-3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                <img src="images/cover-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img src="images/cover-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+    </header><!-- Finaliza HEADER -->
+
+        <!-- Inicia MAIN DE CONTENIDO -->
+        <div class="container">
+            <div class="row">
+              <div class="col-9 col-md-12 col-sm-12">
+                <main class="main">
+                    <section class="main__contenido">
+                        <h1 class="animate__animated animate__fadeInDown">Bienvenidos a Aparel Moda Mexicana</h1>
+                        <h2>Los más vendidos - Ya estamos en Git</h2>
+                        <div class="main__producto">
+
+                            <div class="col-8 col-md-4 col-sm-12">
+                                <div class="main__producto__box card">
+                                    <img src="images/tshirt.png" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                    <div class="main__producto__descripcion card-body">
+                                      <h5 class="card-title">Turn Hate Into Love</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-8 col-md-4 col-sm-12">
+                                <div class="main__producto__box card">
+                                    <img src="images/tshirt.png" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                    <div class="main__producto__descripcion card-body">
+                                      <h5 class="card-title">Turn Hate Into Love</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-8 col-md-4 col-sm-12">
+                                <div class="main__producto__box card">
+                                    <img src="images/tshirt.png" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                    <div class="main__producto__descripcion card-body">
+                                      <h5 class="card-title">Turn Hate Into Love</h5>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </section>
+                    <section id="tabla-productos">
+                        <table>
+                            <tr> <!-- fila 1 -->
+                                <th>Producto</th> <!-- col 1 -->
+                                <th>Información Técnica</th> <!-- col 2 -->
+                                <th>Características</th> <!-- col 3 -->
+                                <th>Beneficios</th> <!-- col 4 -->
+                                <th>Recomendaciones</th> <!-- col 5 -->
+                            </tr>
+                            <tr> <!-- fila 2 -->
+                                <td>Playeras</td> <!-- col 1 -->
+                                <td>Telas fabricadas en México.</td> <!-- col 2 -->
+                                <td>100% Algodón.</td> <!-- col 3 -->
+                                <td>Amigable con el medio ambiente.</td> <!-- col 4 -->
+                                <td>Nuestros productos los usan marcas reconocidas como Versace.</td> <!-- col 5 -->
+                            </tr>
+                            <tr> <!-- fila 3 -->
+                                <td>Zapatos</td> <!-- col 1 -->
+                                <td>Hechos a mano.</td> <!-- col 2 -->
+                                <td>Materiales de alta calidad.</td> <!-- col 3 -->
+                                <td>Proveemos de trabajo a artesanos mexicanos</td> <!-- col 4 -->
+                                <td>Productos de alta calidad a precios accesibles.</td> <!-- col 5 -->
+                            </tr>
+                        </table>
+                    </section>    
+                </main><!-- Finaliza MAIN DE CONTENIDO -->
               </div>
-        </header><!-- Finaliza HEADER -->
-
-        <!-- inicia sección principal de contenido -->
-        <main class="main">
-            
-            <section class="main__contenido">
-                
-                <h1 class="animate__animated animate__fadeInDown">Bienvenidos a Aparel Moda Mexicana</h1>
-                
-                <h2>Los más vendidos - Ya estamos en Git</h2>
-
-                <div class="main__producto">
-
-                    <div class="main__producto__box">
-                        <div class="main__producto__imagen grow">
-                            <img src="images/tshirt.png" alt="Hate and Love">
-                        </div>
-                        <div class="main__producto__descripcion">
-                            <a href="#"><h3>Turn Hate Into Love</h3></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, omnis.</p>
-                        </div>
-                    </div>
-
-                    <div class="main__producto__box">
-                        <div class="main__producto__imagen grow">
-                            <img src="images/tshirt.png" alt="Hate and Love">
-                        </div>
-                        <div class="main__producto__descripcion">
-                            <a href="#"><h3>Turn Hate Into Love</h3></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, omnis.</p>
-                        </div>
-                    </div>
-
-                    <div class="main__producto__box">
-                        <div class="main__producto__imagen grow">
-                            <img src="images/tshirt.png" alt="Hate and Love">
-                        </div>
-                        <div class="main__producto__descripcion">
-                            <a href="#"><h3>Turn Hate Into Love</h3></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, omnis.</p>
-                        </div>
-                    </div>
-
-                    <div class="main__producto__box">
-                        <div class="main__producto__imagen grow">
-                            <img src="images/tshirt.png" alt="Hate and Love">
-                        </div>
-                        <div class="main__producto__descripcion">
-                            <a href="#"><h3>Turn Hate Into Love</h3></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, omnis.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <section id="tabla-productos">
-                <table>
-                    <tr> <!-- fila 1 -->
-                        <th>Producto</th> <!-- col 1 -->
-                        <th>Información Técnica</th> <!-- col 2 -->
-                        <th>Características</th> <!-- col 3 -->
-                        <th>Beneficios</th> <!-- col 4 -->
-                        <th>Recomendaciones</th> <!-- col 5 -->
-                    </tr>
-                    <tr> <!-- fila 2 -->
-                        <td>Playeras</td> <!-- col 1 -->
-                        <td>Telas fabricadas en México.</td> <!-- col 2 -->
-                        <td>100% Algodón.</td> <!-- col 3 -->
-                        <td>Amigable con el medio ambiente.</td> <!-- col 4 -->
-                        <td>Nuestros productos los usan marcas reconocidas como Versace.</td> <!-- col 5 -->
-                    </tr>
-                    <tr> <!-- fila 3 -->
-                        <td>Zapatos</td> <!-- col 1 -->
-                        <td>Hechos a mano.</td> <!-- col 2 -->
-                        <td>Materiales de alta calidad.</td> <!-- col 3 -->
-                        <td>Proveemos de trabajo a artesanos mexicanos</td> <!-- col 4 -->
-                        <td>Productos de alta calidad a precios accesibles.</td> <!-- col 5 -->
-                    </tr>
-                </table>
-            </section>    
-        </main><!-- finaliza sección principal de contenido -->
-
-        <!-- inicia sidebar derecho -->
-        <aside class="aside__anuncio">
-            <section class="aside__anuncio__inicio">
-            </section>
-        </aside><!-- finaliza sidebar derecho -->
-
+              <div class="col-3 col-md-12 col-sm-12">
+                <!-- inicia sidebar derecho -->
+                <aside class="aside__anuncio">
+                    <section class="aside__anuncio__inicio">
+                    </section>
+                </aside><!-- finaliza sidebar derecho -->
+              </div>
+            </div>
+        </div>
         <!-- inicia footer -->
         <footer class="footer">
             <ul class="footer__cliente">
@@ -248,9 +241,8 @@
                 Aparel Moda Mexicana Todos los Derechos Reservados ® 2021
             </div>
         </footer><!-- Finaliza FOOTER -->
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 </body>
 </html>
