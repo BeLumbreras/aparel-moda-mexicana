@@ -13,8 +13,19 @@
 .bg-pink {
     background-color: #FE006F;
 }
+
 .bg-black {
     background-color: #000;
+}
+.btn-pink {
+    color: #fff;
+    background-color: #FE006F;
+    border-color: #FE006F;
+}
+.btn-pink:hover {
+    color: #fff;
+    background-color: #dd0000;
+    border-color: #dd0000;
 }
 
 /* BARRA SUPERIOR ANUNCIO */
@@ -28,16 +39,16 @@
 }
 
 /* HEADER */
-.header__logo img {
+header .header__logo img {
     width: 80px;
     height: auto;
 }
-.header__logo img:hover {
+header .header__logo img:hover {
     width: 80px;
     height: auto;
     transform: rotate(90deg);
 }
-.header .header__menu ul li a.nav-link {
+header .header__menu ul li a.nav-link {
     color: #FFF;
     padding: 3 px 10px;
     border-radius: .25rem;
@@ -58,38 +69,32 @@
 }
 
 /* IMAGEN DE ENCABEZADO EN CADA PÁGINA */
-.header .header__slide__portrait {
-    height: 400px;
-    background: center center #000 url("../images/cover-slide.png") no-repeat;
-    background-size: cover;
-}
-.header .header__slide__blog {
-    height: 400px;
-    background: center center #000 url("../images/blog-cover.jpg") no-repeat;
-    background-size: cover;
-}
-.header .header__slide__zapatos {
-    height: 400px;
-    background: center center #000 url("../images/zapatos-cover.jpg") no-repeat;
-    background-size: cover;
-}
-.header .header__slide__playeras {
+header .header__slide__playeras {
     height: 400px;
     background: center center #000 url("../images/playeras-cover.jpg") no-repeat;
     background-size: cover;
 }
-.header .header__slide__contacto {
+header .header__slide__zapatos {
+    height: 400px;
+    background: center center #000 url("../images/zapatos-cover.jpg") no-repeat;
+    background-size: cover;
+}
+header .header__slide__blog {
+    height: 400px;
+    background: center center #000 url("../images/blog-cover.jpg") no-repeat;
+    background-size: cover;
+}
+header .header__slide__contacto {
     height: 400px;
     background: center center #000 url("../images/contacto-cover.jpg") no-repeat;
     background-size: cover;
 }
 
 /* CONTENIDO */
-main .main__contenido {
-    padding:50px;
+main.main__contenido {
+    margin-top:50px;
 }
-
-main .main__contenido h1 {
+main.main__contenido h1 {
     color:#EC172F;
     font-family: 'Roboto Slab', serif;
     font-weight: 600;
@@ -98,79 +103,36 @@ main .main__contenido h1 {
     text-align: center;
 }
 
-main .main__contenido h2 {
+main.main__contenido h2 {
     padding-bottom: 20px;
     text-align: center;
 }
 
 /* PRODUCTOS*/
-main .main__contenido .main__producto {
-    display: flex;
-    flex-direction: row;
-}
-main .main__contenido .main__producto .main__producto__box {
-    margin: 10px;
+main.main__contenido .main__producto .main__producto__box {
     text-align: center;
     border: 1px solid #000;
-    padding: 25px;
 }
-main .main__contenido .main__producto .main__producto__box .main__producto__imagen {
-    height: 200px;
-    overflow: hidden;
-}
-main .main__contenido .main__producto .main__producto__box .main__producto__imagen img {
-    max-width: 200px;
-}
-main .main__contenido .main__producto .main__producto__box .main__producto__descripcion {
+main.main__contenido .main__producto .main__producto__box .main__producto__descripcion {
     padding-top:25px;
 }
-main .main__contenido .main__producto .main__producto__box .main__producto__descripcion a h3 {
+main.main__contenido .main__producto .main__producto__box .main__producto__descripcion h5 a {
     color:#FE006F;
     font-weight:800;
+    text-decoration:none;
 }
-main .main__contenido .main__producto .main__producto__box .main__producto__descripcion a h3:hover {
-    color:#EC172F;
-    font-weight:800;
+
+main.main__contenido .main__producto .main__producto__box .main__producto__descripcion h5 a:hover {
+    color:#dd0000;
 }
 
 /*TABLA DE PRODUCTOS*/
-#tabla-productos table {
-    margin:0;
-    padding:0;
-    border:none;
-    border-collapse:collapse;
-    border-spacing:0;
-    background-color:#E1E1E1;
-    margin:0 auto;
-    width:900px;
-}
-#tabla-productos table tr:nth-child(1) {
-    background-color:#5f6a7d;
-    color:#FFF;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-#tabla-productos table tr th,
-#tabla-productos table tr td {
-    padding:10px;
-}
-#articulo {
-    display: flex;
-    padding: 50px 0;
-    border-bottom: 1px dashed #E9182C;
-}
-#articulo .articulo__imagen {
-    height: 200px;
-    margin: 0 50px;
-    overflow: hidden;
-}
-#articulo .articulo__imagen img {
-    max-width: 400px;
-}
-#articulo h2.articulo__title {
-    text-align: left;    
+.table th {
+   border-bottom:1px solid #FFF;
+   text-align:center; 
 }
 
+/* ANIMACIONES */
 .skew {
     animation: skew 3s infinite;
     transform: skew(20deg);
@@ -189,19 +151,11 @@ main .main__contenido .main__producto .main__producto__box .main__producto__desc
 .grow:hover { transform: scale(2); }
 
 /* ASIDE */
-aside.aside__anuncio {
-    height: 850px;
-    margin-top:50px;
-    overflow: hidden;
+aside.aside__anuncio img {
+    border:10px solid #FE006F;
 }
-aside.aside__anuncio .aside__anuncio__inicio {
-    height: 850px;
-    background: center center #000 url("../images/catalogo-baner.jpg") no-repeat;
-    
-    max-height: 850px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 20px;
+.sticky-top {
+    top:20px;
 }
 
 /* FOOTER */
@@ -259,10 +213,28 @@ footer.footer li a i.fab.fa-facebook:hover,
 footer.footer li a i.fab.fa-instagram:hover {
     color:#FE006F;
 }
-
+.bg-pink-2 {
+    background-color: #580328;
+    color:#FFF;
+}
+.bg-pink-2 a.text-pink-100 {
+    color:#bd9aa8;
+}
+.bg-pink-2 a.text-pink-100:hover {
+    background-color: #330217;
+    color:#bd9aa8;
+}
+footer li a.link-pink {
+    color:#FE006F;
+}
 /* BOOTSTRAP CSS MY RULES */
 @media (min-width: 1200px) {   
     .navbar-expand-xl .navbar-collapse {
         justify-content: center;
     }
 }
+
+/* .col {
+    background-color: aquamarine;
+    border:1px solid black;
+} */
