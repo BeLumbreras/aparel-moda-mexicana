@@ -71,6 +71,26 @@ header .header__menu ul li a.nav-link {
     background-color: #FE006F;
 }
 
+/* SLIDES DE PORTADA */
+.display-1 {
+    color:rgb(143, 36, 71);
+    font-size: 6.875rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.carousel-caption {
+    bottom: 10rem;
+}
+.carousel-caption a.btn {
+    padding:1rem 3rem;
+    font-size:1.5rem;
+}
+.fa .fa-arrow-right:hover {
+    transition: all .2s ease-in-out;
+    transition-property: transform;
+}
+
+
 /* IMAGEN DE ENCABEZADO EN CADA PÁGINA */
 header .header__slide__playeras {
     height: 400px;
@@ -124,7 +144,6 @@ main.main__contenido .main__producto .main__producto__box .main__producto__descr
     font-weight:800;
     text-decoration:none;
 }
-
 main.main__contenido .main__producto .main__producto__box .main__producto__descripcion h5 a:hover {
     color:#dd0000;
 }
@@ -162,60 +181,6 @@ aside.aside__anuncio img {
 }
 
 /* FOOTER */
-footer.footer {
-    display: grid;
-    grid-template-areas: 
-    "footer__cliente footer__menu footer__news footer__contacta"
-    "footer__text footer__text footer__text footer__text";
-    grid-template-columns: 20% 20% 20% 20%;
-    gap: 20px;
-    justify-content: center;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(154,0,0,1) 50%, rgba(0,212,255,1) 100%);
-    color: #FFF;
-    text-align: center;
-    padding:30px;
-}
-.footer__cliente {
-    grid-area: footer__cliente;
-}
-.footer__menu {
-    grid-area: footer__menu;
-}
-.footer__news {
-    grid-area: footer__news;
-}
-.footer__contacta {
-    grid-area: footer__contacta;
-}
-.footer__text {
-    grid-area: footer__text;
-}
-footer.footer .footer__title {
-    color:#E9182C;
-    padding-bottom:20px;
-    text-transform:uppercase;
-}
-footer.footer ul.footer__cliente li a,
-footer.footer ul.footer__menu li a,
-footer.footer ul.footer__news li p,
-footer.footer ul.footer__contacta li a,
-footer.footer li a i.fab.fa-facebook,
-footer.footer li a i.fab.fa-instagram {
-    color:#FFF;
-    line-height: 1.5em;
-}
-footer.footer li a i.fab.fa-facebook,
-footer.footer li a i.fab.fa-instagram {
-    padding:10px;
-}
-footer.footer ul.footer__cliente li a:hover,
-footer.footer ul.footer__menu li a:hover,
-footer.footer ul.footer__contacta li p a:hover,
-footer.footer li a i.fab.fa-facebook:hover,
-footer.footer li a i.fab.fa-instagram:hover {
-    color:#FE006F;
-}
 .bg-pink-2 {
     background-color: #580328;
     color:#FFF;
@@ -239,6 +204,24 @@ footer li a.link-pink:hover {
 @media (min-width: 1200px) {   
     .navbar-expand-xl .navbar-collapse {
         justify-content: center;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+	.carousel-caption h1 { font-size: 1rem;line-height: 1; }
+    .carousel-caption h2 { font-size: 3rem;line-height: 1; }
+    .carousel-caption h5 { font-size: 0.7rem;line-height: 1; }
+    .carousel-caption a.btn-pink { font-size: 0.7rem;line-height: 1; }
+    .carousel-caption {
+        bottom: 1.5rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .carousel-caption h1 { font-size: 1.5rem;line-height: 1; }
+    .carousel-caption h2 { font-size: 5rem;line-height: 1; }
+    .carousel-caption h5 { font-size: 1.2rem;line-height: 1; }
+    .carousel-caption a.btn-pink { font-size: 1.2rem;line-height: 1; }
+    .carousel-caption {
+        bottom: 3rem;
     }
 }
 
