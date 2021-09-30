@@ -9,6 +9,9 @@
     font-weight: 400;
     text-decoration: none;
 }
+a {
+    text-decoration: none;
+}
 
 .bg-pink {
     background-color: #FE006F;
@@ -227,6 +230,11 @@ footer.footer li a i.fab.fa-instagram:hover {
 footer li a.link-pink {
     color:#FE006F;
 }
+footer li a.link-pink:hover {
+    color:#dd0000;
+}
+
+
 /* BOOTSTRAP CSS MY RULES */
 @media (min-width: 1200px) {   
     .navbar-expand-xl .navbar-collapse {
