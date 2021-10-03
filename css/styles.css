@@ -28,8 +28,8 @@
 
 .btn-pink:hover {
   color: #fff;
-  background-color: #dd0000;
-  border-color: #dd0000;
+  background-color: #8F2447;
+  border-color: #8F2447;
 }
 
 .btn-outline-pink {
@@ -52,7 +52,7 @@ header #barra__anuncio {
 
 header #barra__anuncio .barra__anuncio__moneda,
 header #barra__anuncio .barra__anuncio__monto {
-  color: #fffb00;
+  color: #cffe00;
   font-size: 15px;
 }
 
@@ -75,7 +75,7 @@ header .header__menu ul li a.nav-link {
 
 header .header__menu ul li a:hover {
   color: #FFF;
-  background-color: #FE006F;
+  background-color: #8F2447;
 }
 
 header .display-1 {

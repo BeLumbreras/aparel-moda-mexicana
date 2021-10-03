@@ -10,30 +10,35 @@
         text-decoration: none;
     }
 }
-.bg-pink {
-    background-color: #FE006F;
-}
 
+$pink:#FE006F;
+$pinkHover:#8F2447;
+$yellow:#cffe00;
+
+.bg-pink {
+    background-color: $pink;
+}
 .bg-black {
     background-color: #000;
 }
+
 .btn-pink {
     color: #fff;
-    background-color: #FE006F;
-    border-color: #FE006F;
+    background-color: $pink;
+    border-color: $pink;
 }
 .btn-pink:hover {
     color: #fff;
-    background-color: #dd0000;
-    border-color: #dd0000;
+    background-color: $pinkHover;
+    border-color: $pinkHover;
 }
 .btn-outline-pink {
-    color: #FE006F;
-    border-color: #FE006F;
+    color: $pink;
+    border-color: $pink;
 }
 .btn-outline-pink:hover {
     color: #FFF;
-    background-color: #FE006F;
+    background-color: $pink;
 }
 
 /* HEADER */
@@ -47,7 +52,7 @@ header {
 
         .barra__anuncio__moneda,
         .barra__anuncio__monto {
-            color: rgb(255, 251, 0);
+            color: $yellow;
             font-size: 15px;
         }
     }
@@ -63,12 +68,12 @@ header {
         color: #FFF;
         padding: 3 px 10px;
         border-radius: .25rem;
-        border: 1px solid #FE006F;
+        border: 1px solid $pink;
         margin: 0 10px;
     }
     .header__menu ul li a:hover {
         color: #FFF;
-        background-color: #FE006F;
+        background-color: $pinkHover;
     }
     
     .display-1 {
