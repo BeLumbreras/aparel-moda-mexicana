@@ -4,117 +4,246 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Aparel Moda Mexicana » Zapatos</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="..\css\estilos.css">
 </head>
 <body>
-    <div class="contenedor__principal">
-
-        <div id="barra__anuncio">
-            <p>ENVÍO GRATIS DESDE <span class="barra__anuncio__moneda">MXN$</span><span class="barra__anuncio__monto">800</span>
-            </p>
-        </div>
-
-        <header class="header">
-            <div class="header__menu">
-                <div class="header__logo">
-                    <a href="../index.html"><img src="../images/Aparel-Moda-Mexicana-Logo-Blanco.svg" alt="Aparel Logo"></a>
-                    
-                </div>       
-                <nav class="header__menu">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/playeras.html">Playeras</a></li>
-                        <li><a href="../pages/zapatos.html">Zapatos</a></li>
-                        <li><a href="../pages/blog.html">Blog</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                        <li class="search_container" data-autocomplete-true=""> <form action="/search" class="search_form" _lpchecked="1"> <input type="hidden" name="type" value="product"> <span class="fas fa-search search-submit"></span> <input type="text" name="q" placeholder="Buscar" value="" autocapitalize="off" autocomplete="off" autocorrect="off"><div class="search__results-wrapper" style="display: none;"><ul class="search__results"></ul></div></form></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <div class="header__slide">
-                <div class="header__slide__zapatos">
+    <!-- inicia HEADER -->
+    <header>
+        <!-- Inicia BARRA DE PROMOCIONES -->
+        <div id="barra__anuncio" class="py-3 bg-pink">
+            <div class="container">
+                <div class="row">
+                <div class="col-12">
+                    <!-- Text -->
+                    <div class="text-center">
+                        <span>⚡️ ENVÍO GRATIS DESDE <span class="barra__anuncio__moneda">MXN$</span><span class="barra__anuncio__monto">800</span> ⚡️</span>
+                    </div>
+                </div>
                 </div>
             </div>
-        </header>
+        </div><!-- Finaliza BARRA DE PROMOCIONES -->
 
-        <main class="main">
-            <section class="main__contenido">                
-                <h1 class="animate__animated animate__fadeInDown">Zapatos</h1>
+        <!-- Inicia MENÚ DE NAVEGACIÓN -->
+        <nav class="header__menu navbar navbar-expand-xl navbar-dark bg-black">
+            <div class="container">
+                <a class=" header__logo navbar-brand d-xl-none" href="../index.html">
+                    <img src="../images/Aparel-Moda-Mexicana-Logo-Blanco.svg" alt="Aparel Logo"></a>
+                </a>
 
-                <article id="articulo">
-                    <div class="articulo__imagen">
-                        <img src="../images/zapatos-1.jpg" alt="Zapatos de piso">
-                    </div>                    
-                    <div>
-                        <h2 class="articulo__title">Playera Pirano My True Love</h2>
-                        <p class="articulo__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit in, iste perferendis tempore neque doloremque rem voluptates perspiciatis nesciunt?</p>
-                    </div>                    
-                </article>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <article id="articulo">
-                    <div class="articulo__imagen">
-                        <img src="../images/zapatos-2.jpg" alt="Zapatos de plataforma">
-                    </div>                    
-                    <div>
-                        <h2 class="articulo__title">Playera Lips Love</h2>
-                        <p class="articulo__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit in, iste perferendis tempore neque doloremque rem voluptates perspiciatis nesciunt?</p>
-                    </div>                    
-                </article>
-            </section>
-        </main>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+                    <ul class="navbar-nav mx-2 mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/playeras.html">Playeras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/zapatos.html">Zapatos</a>
+                        </li>
+                    </ul>
 
-        <aside class="aside__anuncio">
-            <section class="aside__anuncio__inicio">
-            </section>
-        </aside>
+                    <a class="navbar-brand mx-4 d-none d-xl-block header__logo" href="index.html">
+                        <img src="../images/Aparel-Moda-Mexicana-Logo-Blanco.svg" alt="Aparel Logo">
+                    </a>
 
-        <footer class="footer">
-            <ul class="footer__cliente">
-                <li><h4 class="footer__title">Ayuda al cliente</h4>
-                </li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-                <li><a href="#">Aviso de Privacidad</a></li>
-                <li><a href="#">Términos y Condiciones</a></li>
-                <li><a href="#">Políticas de Devolución</a></li>
-            </ul>
+                    <ul class="navbar-nav mx-2 mb-2 mb-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/playeras.html">Contacto</a>
+                        </li>
+                    </ul>
 
-            <ul class="footer__menu">
-                <li><h4 class="footer__title">Menú principal</h4></li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/playeras.html">Playeras</a></li>
-                <li><a href="../pages/zapatos.html">Zapatos</a></li>
-                <li><a href="../pages/blog.html">Blog</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-
-            <ul class=".footer__news">
-                <li><h4 class="footer__title">Newsletter</h4></li>
-                <li><p>Subscríbete para recibir notificaciones, accesos exclusivos y más.</p></li>
-                <li>
-                    <form method="post" action="/contact#footer-newsletter" id="footer-newsletter" class="Footer__Newsletter Form">
-                        <input type="hidden" name="form_type" value="customer"><input type="hidden" name="contact[tags]" value="newsletter">
-                        <input type="email" name="" class="Form__Input" placeholder="Ingresa tu dirección de correo electrónico" required="">
-                        <button type="submit" class="Form__Submit">Subscríbete</button>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-pink" type="submit">Buscar</button>
                     </form>
-                </li>
-            </ul>
-
-            <ul class=".footer__contacta">
-                <li><h4 class="footer__title">Contáctanos</h4>
-                </li>
-                <li><p>¡Nos gusta saber de tí!</p></li>
-                <li><p>Escríbenos a <a href="mailto:hola@aparelmodamexicana.mx">hola@aparelmodamexicana.mx</a> o llama al 55 59222222 y con gusto te atenderemos.</p></li>
-                <li><a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>         
-            
-            <div class="footer__text">
-                Aparel Moda Mexicana Todos los Derechos Reservados ® 2021
+                </div>
             </div>
-        </footer>
+        </nav>
+        
+        <!-- CABECERA PLAYERAS -->
+        <div class="header__slide">
+            <div class="header__slide__zapatos">
+            </div>
+        </div>
+    </header><!-- Finaliza HEADER -->
+
+    <!-- Inicia MAIN DE CONTENIDO -->
+    <div class="container">
+        <div class="row">
+            <main class="main__contenido col-9">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="animate__animated animate__fadeInDown">Zapatos</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="main__producto row align-items-center">
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-Zapatos-1.jpg" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Wixarika: Colección Huichol</a></h5>
+                                    <p class="card-text">La colección consta de solamente 760 piezas constituidas por dos familias. Esto fue con la finalidad de exaltar aún más el valor del arte huichol.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-Zapatos-2.jpg" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Mona & May</a></h5>
+                                    <p class="card-text">Esta empresa tapatía refleja la tradición zapatera de nuestro país: son una familia que desde hace cinco generaciones se dedica a la producción de zapatos.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-Zapatos-3.jpg" class="main__producto__imagen grow card-img-top" alt="La Doña, belleza inigualable">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Huaraches artesanales mexicanos</a></h5>
+                                    <p class="card-text">Son zapatos de plataforma con grabados en corte láser, diseño de sol, somos fabricantes de mayoreo, exportamos a Estados Unidos y Canadá.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="main__producto row align-items-center">
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-Zapatos-4.jpg" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Mut Calzado Artesanal</a></h5>
+                                    <p class="card-text">Trabajamos en colaboración con un grupo de artesanas de una comunidad llamada Yetón, cerca del Municipio de San Andrés Larráinzar, es un grupo está integrado por 30 mujeres que teje en telar de cintura.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-Zapatos-5.jpg" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Maka México Alpargatas</a></h5>
+                                    <p class="card-text">Admiradoras de nuestra cultura, Maka es un homenaje a México. Comparte en cada una de sus piezas una visión del mundo actual, que nace de lo más profundo de la riqueza mexicana; sus tradiciones.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-Zapatos-6.jpg" class="main__producto__imagen grow card-img-top" alt="La Doña, belleza inigualable">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Huaraches artesanales mexicanos</a></h5>
+                                    <p class="card-text">Son zapatos de plataforma en color rojo con grabados en corte láser, somos fabricantes de mayoreo y menudeo, hacemos envíos internacionales a Estados Unidos y Canadá.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main><!-- Finaliza MAIN DE CONTENIDO -->
+            
+            <!-- Inicia SIDEBAR DERECHO -->
+            <aside class="aside__anuncio col-3 col-md-3 col-sm-12 mt-5">
+                <div class="container sticky-top">
+                    <div class="row">
+                        <div class="col">
+                            <img src="../images/catalogo-baner.jpg" class="img-fluid" alt="Catálogo">
+                        </div>
+                    </div>
+                </div>
+            </aside><!-- Finaliza SIDEBAR DERECHO -->
+        </div>
     </div>
+
+    <!-- inicia FOOTER -->
+    <div class="container-fluid bg-pink-2" style="background-image: url(images/pattern-2.svg); background-repeat: none; background-size: cover;">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                <div class="col-2 col-md-2 col-sm-12">
+                    <h5>Menú Principal</h5>
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-pink-100">Inicio</a></li>
+                    <li class="nav-item mb-2"><a href="../pages/playeras.html" class="nav-link p-0 text-pink-100">Playeras</a></li>
+                    <li class="nav-item mb-2"><a href="../pages/zapatos.html" class="nav-link p-0 text-pink-100">Zapatos</a></li>
+                    <li class="nav-item mb-2"><a href="../pages/blog.html" class="nav-link p-0 text-pink-100">Blog</a></li>
+                    <li class="nav-item mb-2"><a href="../pages/contacto.html" class="nav-link p-0 text-pink-100">Contacto</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-2 col-md-2 col-sm-12">
+                    <h5>Soporte</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-pink-100">Contacto</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-pink-100">Aviso de Privacidad</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-pink-100">Términos y Condiciones</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-pink-100">Preguntas y Respuestas</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-pink-100">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+            
+                <div class="col-2 col-md-2 col-sm-12">
+                    <h5>Contáctanos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">¡Nos gusta saber de tí!</li>
+                        <li class="nav-item mb-2">Escríbenos a</li>
+                        <li class="nav-item mb-2"><a href="mailto:hola@aparelmodamexicana.mx"class="nav-link p-0 text-pink-100">hola@aparelmodamexicana.mx</a></li>
+                        <li class="nav-item mb-2">o llama al 55 59222222</li>
+                        <li class="nav-item mb-2">y con gusto te atenderemos.</li>
+                    </ul>
+                </div>
+            
+                <div class="col-4 col-md-4 col-sm-12 offset-1">
+                    <form>
+                    <h5>Suscríbete a nuestro boletín</h5>
+                    <p>Subscríbete para recibir notificaciones, accesos exclusivos y más.</p>
+                    <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Correo Electrónico</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electrónico">
+                        <button class="btn btn-pink" type="button">Suscríbete</button>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            
+                <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>Aparel Moda Mexicana Todos los Derechos Reservados &copy; 2021.
+                Las imágenes utilizadas en esta página son solamente ilustrativas, tienen su propietario correspondiente de cada una.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-pink" href="https://www.instagram.com/destellosdemexico/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li class="ms-3"><a class="link-pink" href="https://www.facebook.com/DestellosdeMexico/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+                </ul>
+                </div>
+            </footer>
+        </div>
+    </div><!-- Finaliza FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 </body>
 </html>

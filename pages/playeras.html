@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="..\css\estilos.css">
@@ -97,26 +98,70 @@
 
                 <div class="container">
                     <div class="main__producto row align-items-center">
-                        <div class="col mb-4">
-                            <article id="articulo">
-                                <div class="articulo__imagen">
-                                    <img src="../images/playera-1.jpg" alt="Playera Pirano My True Love">
-                                </div>                    
-                                <div>
-                                    <h2 class="articulo__title">Playera Pirano My True Love</h2>
-                                    <p class="articulo__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit in, iste perferendis tempore neque doloremque rem voluptates perspiciatis nesciunt?</p>
-                                </div>                    
-                            </article>
-            
-                            <article id="articulo">
-                                <div class="articulo__imagen">
-                                    <img src="../images/playera-2.jpg" alt="Playera Lips Love">
-                                </div>                    
-                                <div>
-                                    <h2 class="articulo__title">Playera Lips Love</h2>
-                                    <p class="articulo__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur suscipit in, iste perferendis tempore neque doloremque rem voluptates perspiciatis nesciunt?</p>
-                                </div>                    
-                            </article>
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-3.jpg" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Cihuatl, fuerza femenil</a></h5>
+                                    <p class="card-text">Con un toque más tornasol y vivos rojos metalizados, le damos un toque mas sensual y luminoso que podrás lucir con un atuendo casual o un día en la oficina, resaltando tu belleza.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-6.jpg" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Jaguar, es ideal para ti</a></h5>
+                                    <p class="card-text">Guerrero jaguar, también Tezcatlipoca (Dios del cielo nocturno), simboliza una misteriosa oscuridad, valentía, poder y velocidad como lo es el sigiloso felino.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-8.jpg" class="main__producto__imagen grow card-img-top" alt="La Doña, belleza inigualable">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">La Doña, belleza inigualable</a></h5>
+                                    <p class="card-text">Ícono del cine mexicano por su belleza, talento e imponente presencia. Con una de sus famosas frases nos recuerda su vanidosa y altiva personalidad.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="main__producto row align-items-center">
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-15.jpg" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Incan, para dejar huella</a></h5>
+                                    <p class="card-text">La cultura maya, fue una civilización distinguida por sus desarrollos en el arte, arquitectura, matemáticas, sus calendarios y desde luego la astronomía.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-4.jpg" class="main__producto__imagen grow card-img-top" alt="Hate and Love">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Simplemente Mezclillacóatl</a></h5>
+                                    <p class="card-text">Quetzalcóatl (serpiente emplumada), deidad más representativa de nuestra cultura prehispánica, se manifiesta la fuerza del viento como Dios.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md-4 col-sm-12 mb-4">
+                            <div class="main__producto__box card">
+                                <img src="../images/DDM-Foto-Plecada-IG-18.jpg" class="main__producto__imagen grow card-img-top" alt="La Doña, belleza inigualable">
+                                <div class="main__producto__descripcion card-body">
+                                    <h5 class="card-title"><a href="#">Quetza, calor abrigador</a></h5>
+                                    <p class="card-text">Quetzalcóatl fue pensado como un diseño totalmente unisex, a través del fondo en color negro, podemos apreciar aún más el resplandor de nuestra serpiente emplumada.</p>
+                                    <a href="#" class="btn btn-pink">Comprar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,11 +232,11 @@
                 </div>
             
                 <div class="d-flex justify-content-between py-4 my-4 border-top">
-                <p>Aparel Moda Mexicana Todos los Derechos Reservados &copy; 2021</p>
+                    <p>Aparel Moda Mexicana Todos los Derechos Reservados &copy; 2021.
+                        Las imágenes utilizadas en esta página son solamente ilustrativas, tienen su propietario correspondiente de cada una.</p>
                 <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-pink" href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
-                    <li class="ms-3"><a class="link-pink" href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
-                    <li class="ms-3"><a class="link-pink" href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li class="ms-3"><a class="link-pink" href="https://www.instagram.com/destellosdemexico/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li class="ms-3"><a class="link-pink" href="https://www.facebook.com/DestellosdeMexico/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
                 </ul>
                 </div>
             </footer>

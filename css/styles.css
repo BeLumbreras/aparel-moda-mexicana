@@ -1,1 +1,28 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.card {
+  border: 0;
+}
+
+.card .card-badge {
+  position: absolute;
+  top: 1.25rem;
+  z-index: 1;
+}
+
+.card .badge-white {
+  background-color: #fff;
+  color: #111;
+}
+
+.card .badge {
+  display: inline-block;
+  padding: .35em .65em;
+  font-size: .75em;
+  font-weight: 700;
+  letter-spacing: .02em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0;
+}
+/*# sourceMappingURL=styles.css.map */
