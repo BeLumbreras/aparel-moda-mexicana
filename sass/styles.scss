@@ -1,3 +1,117 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+
+    a {
+        text-decoration: none;
+    }
+}
+.bg-pink {
+    background-color: #FE006F;
+}
+
+.bg-black {
+    background-color: #000;
+}
+.btn-pink {
+    color: #fff;
+    background-color: #FE006F;
+    border-color: #FE006F;
+}
+.btn-pink:hover {
+    color: #fff;
+    background-color: #dd0000;
+    border-color: #dd0000;
+}
+.btn-outline-pink {
+    color: #FE006F;
+    border-color: #FE006F;
+}
+.btn-outline-pink:hover {
+    color: #FFF;
+    background-color: #FE006F;
+}
+
+/* HEADER */
+/* BARRA SUPERIOR ANUNCIO */
+/* SLIDES DE PORTADA */
+ /* IMAGEN DE ENCABEZADO EN CADA PÁGINA */
+header {
+    
+    #barra__anuncio {
+        color:#FFF;
+
+        .barra__anuncio__moneda,
+        .barra__anuncio__monto {
+            color: rgb(255, 251, 0);
+            font-size: 15px;
+        }
+    }
+
+    .header__logo img {
+        width: 80px;
+        height: auto;
+    }
+    .header__logo img:hover {
+        transform: rotate(90deg);
+    }
+    .header__menu ul li a.nav-link {
+        color: #FFF;
+        padding: 3 px 10px;
+        border-radius: .25rem;
+        border: 1px solid #FE006F;
+        margin: 0 10px;
+    }
+    .header__menu ul li a:hover {
+        color: #FFF;
+        background-color: #FE006F;
+    }
+    
+    .display-1 {
+        color:rgb(143, 36, 71);
+        font-size: 6.875rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .carousel-caption {
+        bottom: 10rem;
+    }
+    .carousel-caption a.btn {
+        padding:1rem 3rem;
+        font-size:1.5rem;
+    }
+    .fa .fa-arrow-right:hover {
+        transition: all .2s ease-in-out;
+        transition-property: transform;
+    }
+   
+    .header__slide__playeras {
+        height: 400px;
+        background: center center #000 url("../images/playeras-cover.jpg") no-repeat;
+        background-size: cover;
+    }
+    .header__slide__zapatos {
+        height: 400px;
+        background: center center #000 url("../images/zapatos-cover.jpg") no-repeat;
+        background-size: cover;
+    }
+    .header__slide__blog {
+        height: 400px;
+        background: center center #000 url("../images/blog-cover.jpg") no-repeat;
+        background-size: cover;
+    }
+    .header__slide__contacto {
+        height: 400px;
+        background: center center #000 url("../images/contacto-cover.jpg") no-repeat;
+        background-size: cover;
+    }
+
+}
+
 .card {
     border:0;
 
