@@ -21,13 +21,13 @@
 }
 
 .btn-pink {
-  color: #fff;
+  color: #FFF;
   background-color: #FE006F;
   border-color: #FE006F;
 }
 
 .btn-pink:hover {
-  color: #fff;
+  color: #FFF;
   background-color: #8F2447;
   border-color: #8F2447;
 }
@@ -53,7 +53,7 @@ header #barra__anuncio {
 header #barra__anuncio .barra__anuncio__moneda,
 header #barra__anuncio .barra__anuncio__monto {
   color: #cffe00;
-  font-size: 15px;
+  font-size: 1.5em;
 }
 
 header .header__logo img {
@@ -67,7 +67,7 @@ header .header__logo img:hover {
 
 header .header__menu ul li a.nav-link {
   color: #FFF;
-  padding: 3 px 10px;
+  padding: 3px 10px;
   border-radius: .25rem;
   border: 1px solid #FE006F;
   margin: 0 10px;
@@ -79,7 +79,7 @@ header .header__menu ul li a:hover {
 }
 
 header .display-1 {
-  color: #8f2447;
+  color: #8F2447;
   font-size: 6.875rem;
   font-weight: 500;
   line-height: 1.2;
@@ -99,28 +99,25 @@ header .fa .fa-arrow-right:hover {
   transition-property: transform;
 }
 
-header .header__slide__playeras {
-  height: 400px;
-  background: center center #000 url("../images/playeras-cover.jpg") no-repeat;
+header .headerDimensiones, header .header__slide__playeras, header .header__slide__zapatos, header .header__slide__blog, header .header__slide__contacto {
   background-size: cover;
+  height: 400px;
+}
+
+header .header__slide__playeras {
+  background: center center #000 url("../images/playeras-cover.jpg") no-repeat;
 }
 
 header .header__slide__zapatos {
-  height: 400px;
   background: center center #000 url("../images/zapatos-cover.jpg") no-repeat;
-  background-size: cover;
 }
 
 header .header__slide__blog {
-  height: 400px;
   background: center center #000 url("../images/blog-cover.jpg") no-repeat;
-  background-size: cover;
 }
 
 header .header__slide__contacto {
-  height: 400px;
   background: center center #000 url("../images/contacto-cover.jpg") no-repeat;
-  background-size: cover;
 }
 
 .card {
@@ -149,5 +146,26 @@ header .header__slide__contacto {
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0;
+}
+
+/* CONTENIDO */
+.textos__Titulares, .main__contenido h1, .main__contenido h2 {
+  font-family: "Roboto Slab", serif;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.main__contenido {
+  margin-top: 50px;
+}
+
+.main__contenido h1 {
+  color: #EC172F;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.main__contenido h2 {
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

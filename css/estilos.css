@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* CONTENIDO */
-main.main__contenido {
-    margin-top:50px;
-}
-main.main__contenido h1 {
-    color:#EC172F;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 600;
-    font-size: 2em;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-main.main__contenido h2 {
-    padding-bottom: 20px;
-    text-align: center;
-}
-
 /* PRODUCTOS*/
 main.main__contenido .main__producto .main__producto__box {
     text-align: center;

@@ -11,24 +11,29 @@
     }
 }
 
+$roboto-slab: 'Roboto Slab', serif;
+$rojo:#EC172F;
 $pink:#FE006F;
+$black:#000;
+$white:#FFF;
 $pinkHover:#8F2447;
 $yellow:#cffe00;
+$tenPixel: 10px;
 
 .bg-pink {
     background-color: $pink;
 }
 .bg-black {
-    background-color: #000;
+    background-color: $black;
 }
 
 .btn-pink {
-    color: #fff;
+    color: $white;
     background-color: $pink;
     border-color: $pink;
 }
 .btn-pink:hover {
-    color: #fff;
+    color: $white;
     background-color: $pinkHover;
     border-color: $pinkHover;
 }
@@ -37,7 +42,7 @@ $yellow:#cffe00;
     border-color: $pink;
 }
 .btn-outline-pink:hover {
-    color: #FFF;
+    color: $white;
     background-color: $pink;
 }
 
@@ -48,36 +53,36 @@ $yellow:#cffe00;
 header {
     
     #barra__anuncio {
-        color:#FFF;
+        color:$white;
 
         .barra__anuncio__moneda,
         .barra__anuncio__monto {
             color: $yellow;
-            font-size: 15px;
+            font-size: 1.5em;
         }
     }
 
     .header__logo img {
-        width: 80px;
+        width: $tenPixel*8;
         height: auto;
     }
     .header__logo img:hover {
         transform: rotate(90deg);
     }
     .header__menu ul li a.nav-link {
-        color: #FFF;
-        padding: 3 px 10px;
+        color: $white;
+        padding: 3px $tenPixel;
         border-radius: .25rem;
         border: 1px solid $pink;
-        margin: 0 10px;
+        margin: 0 $tenPixel;
     }
     .header__menu ul li a:hover {
-        color: #FFF;
+        color: $white;
         background-color: $pinkHover;
     }
     
     .display-1 {
-        color:rgb(143, 36, 71);
+        color:$pinkHover;
         font-size: 6.875rem;
         font-weight: 500;
         line-height: 1.2;
@@ -93,26 +98,25 @@ header {
         transition: all .2s ease-in-out;
         transition-property: transform;
     }
-   
-    .header__slide__playeras {
-        height: 400px;
-        background: center center #000 url("../images/playeras-cover.jpg") no-repeat;
+   .headerDimensiones {
         background-size: cover;
+        height: $tenPixel*40;
+   }
+    .header__slide__playeras {
+        @extend .headerDimensiones;
+        background: center center #000 url("../images/playeras-cover.jpg") no-repeat;    
     }
     .header__slide__zapatos {
-        height: 400px;
+        @extend .headerDimensiones;
         background: center center #000 url("../images/zapatos-cover.jpg") no-repeat;
-        background-size: cover;
     }
     .header__slide__blog {
-        height: 400px;
+        @extend .headerDimensiones;
         background: center center #000 url("../images/blog-cover.jpg") no-repeat;
-        background-size: cover;
     }
     .header__slide__contacto {
-        height: 400px;
+        @extend .headerDimensiones;
         background: center center #000 url("../images/contacto-cover.jpg") no-repeat;
-        background-size: cover;
     }
 
 }
@@ -143,3 +147,23 @@ header {
     }
 }
 
+/* CONTENIDO */
+.textos__Titulares {
+    font-family: $roboto-slab;
+    padding-bottom: $tenPixel*2;
+    text-align: center;
+}
+.main__contenido {
+    margin-top: $tenPixel*5;
+
+    h1 {
+        @extend .textos__Titulares;
+        color:$rojo;
+        font-weight: 600;
+        font-size: 2em;
+    }
+    h2 {
+        @extend .textos__Titulares;
+        padding-bottom: $tenPixel*2;
+    }
+}
