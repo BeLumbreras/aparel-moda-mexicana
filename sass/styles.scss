@@ -1,22 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     box-sizing: border-box;
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
 
     a {
         text-decoration: none;
     }
 }
 
+
 $roboto-slab: 'Roboto Slab', serif;
+$montserrat:'Montserrat', sans-serif;
 $rojo:#EC172F;
-$pink:#FE006F;
 $black:#000;
 $white:#FFF;
+$pink:#FE006F;
 $pinkHover:#8F2447;
+$pinkPalido:#bd9aa8;
+$pinkFooter:#580328;
 $yellow:#cffe00;
 $tenPixel: 10px;
 
@@ -148,22 +151,131 @@ header {
 }
 
 /* CONTENIDO */
-.textos__Titulares {
+/* PRODUCTOS*/
+.texto__titular {
     font-family: $roboto-slab;
     padding-bottom: $tenPixel*2;
     text-align: center;
+}
+.texto__cuerpo {
+    font-family: $montserrat;
+    text-align: justify;
 }
 .main__contenido {
     margin-top: $tenPixel*5;
 
     h1 {
-        @extend .textos__Titulares;
-        color:$rojo;
+        @extend .texto__titular;
+        color: $rojo;
         font-weight: 600;
         font-size: 2em;
     }
     h2 {
-        @extend .textos__Titulares;
+        @extend .texto__titular;
         padding-bottom: $tenPixel*2;
+    }
+    h5 a {
+        @extend .texto__titular;
+        color: $rojo;
+        font-weight: 600;
+    }
+    h5 a:hover {
+        @extend .texto__titular;
+        color: $pinkHover;
+        font-weight: 600;
+    }
+    .main__producto .main__producto__box {
+        font-family: $montserrat;
+        border: 1px solid $black;
+    }
+    .main__producto .main__producto__box .main__producto__descripcion {
+        padding-top:$tenPixel*2+5;
+    }
+    .main__producto .main__producto__box .main__producto__descripcion h5 a {
+        color:$pink;
+        font-weight:800;
+        text-decoration:none;
+    }
+    .main__producto .main__producto__box .main__producto__descripcion h5 a:hover {
+        color:$pinkHover;
+    }
+}
+/*TABLA DE PRODUCTOS*/
+.table th {
+    border-bottom:1px solid $white;
+    text-align:center;
+ }
+ 
+/* ANIMACIONES */
+.skew {
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+@keyframes skew {
+    0% {
+      transform: skewX(20deg);
+    }
+    100% {
+      transform: skewX(-20deg);
+    }
+  }
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(2); }
+
+/* ASIDE */
+.aside__anuncio img {
+    border: $tenPixel solid $pink;
+}
+.sticky-top {
+    top:$tenPixel;
+}
+
+/* FOOTER */
+.bg-pink-2 {
+    background-color: $pinkFooter;
+    color:$white;
+
+    a.text-pink-100 {
+        color:$pinkPalido;
+    }
+    a.text-pink-100:hover {
+        background-color: $pinkHover;
+        color:$pinkPalido;
+    }
+}
+
+footer {
+    li a.link-pink {
+        color:$pink;
+    }
+    li a.link-pink:hover {
+        color:$pinkHover;
+    }
+}
+
+/* BOOTSTRAP CSS MY RULES */
+@media (min-width: 1200px) {   
+    .navbar-expand-xl .navbar-collapse {
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+	.carousel-caption h1 { font-size: 1rem;line-height: 1; }
+    .carousel-caption h2 { font-size: 3rem;line-height: 1; }
+    .carousel-caption h5 { font-size: 0.7rem;line-height: 1; }
+    .carousel-caption a.btn-pink { font-size: 0.7rem;line-height: 1; }
+    .carousel-caption {
+        bottom: 1.5rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .carousel-caption h1 { font-size: 1.5rem;line-height: 1; }
+    .carousel-caption h2 { font-size: 5rem;line-height: 1; }
+    .carousel-caption h5 { font-size: 1.2rem;line-height: 1; }
+    .carousel-caption a.btn-pink { font-size: 1.2rem;line-height: 1; }
+    .carousel-caption {
+        bottom: 3rem;
     }
 }
