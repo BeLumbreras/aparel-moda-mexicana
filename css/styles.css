@@ -11,14 +11,6 @@
   text-decoration: none;
 }
 
-.bg-pink {
-  background-color: #FE006F;
-}
-
-.bg-black {
-  background-color: #000;
-}
-
 .btn-pink {
   color: #FFF;
   background-color: #FE006F;
@@ -45,6 +37,14 @@
 /* BARRA SUPERIOR ANUNCIO */
 /* SLIDES DE PORTADA */
 /* IMAGEN DE ENCABEZADO EN CADA PÁGINA */
+.bg-pink {
+  background-color: #FE006F;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
 header #barra__anuncio {
   color: #FFF;
 }
@@ -72,30 +72,30 @@ header .header__menu ul li a.nav-link {
   margin: 0 10px;
 }
 
-header .header__menu ul li a:hover {
+header .header__menu ul li a.nav-link:hover {
   color: #FFF;
   background-color: #8F2447;
-}
-
-header .display-1 {
-  color: #8F2447;
-  font-size: 6.875rem;
-  font-weight: 500;
-  line-height: 1.2;
 }
 
 header .carousel-caption {
   bottom: 10rem;
 }
 
+header .carousel-caption h2 {
+  font-size: 5.5rem;
+  line-height: 1;
+}
+
+header .carousel-caption h3.display-1 {
+  color: #8F2447;
+  font-size: 6.875rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 header .carousel-caption a.btn {
   padding: 1rem 3rem;
   font-size: 1.5rem;
-}
-
-header .fa .fa-arrow-right:hover {
-  transition: all .2s ease-in-out;
-  transition-property: transform;
 }
 
 header .headerDimensiones, header .header__slide__playeras, header .header__slide__zapatos, header .header__slide__blog, header .header__slide__contacto {
@@ -119,6 +119,8 @@ header .header__slide__contacto {
   background: center center #000 url("../images/contacto-cover.jpg") no-repeat;
 }
 
+/* CONTENIDO */
+/* PRODUCTOS*/
 .card {
   border: 0;
 }
@@ -147,17 +149,13 @@ header .header__slide__contacto {
   border-radius: 0;
 }
 
-/* CONTENIDO */
-/* PRODUCTOS*/
-.texto__titular, .main__contenido h1, .main__contenido h2, .main__contenido h5 a, .main__contenido h5 a:hover {
+.texto__titular, .main__contenido h1, .main__contenido h2, .main__contenido h5 a {
   font-family: "Roboto Slab", serif;
-  padding-bottom: 20px;
-  text-align: center;
+  padding: 5px;
 }
 
 .texto__cuerpo {
   font-family: "Montserrat", sans-serif;
-  text-align: justify;
 }
 
 .main__contenido {
@@ -171,7 +169,7 @@ header .header__slide__contacto {
 }
 
 .main__contenido h2 {
-  padding-bottom: 20px;
+  color: #000;
 }
 
 .main__contenido h5 a {
@@ -180,8 +178,8 @@ header .header__slide__contacto {
 }
 
 .main__contenido h5 a:hover {
-  color: #8F2447;
-  font-weight: 600;
+  background-color: #8F2447;
+  color: #FFF;
 }
 
 .main__contenido .main__producto .main__producto__box {
@@ -191,16 +189,6 @@ header .header__slide__contacto {
 
 .main__contenido .main__producto .main__producto__box .main__producto__descripcion {
   padding-top: 25px;
-}
-
-.main__contenido .main__producto .main__producto__box .main__producto__descripcion h5 a {
-  color: #FE006F;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.main__contenido .main__producto .main__producto__box .main__producto__descripcion h5 a:hover {
-  color: #8F2447;
 }
 
 /*TABLA DE PRODUCTOS*/
@@ -273,9 +261,8 @@ footer li a.link-pink:hover {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 767px) {
-  .carousel-caption h1 {
-    font-size: 1rem;
-    line-height: 1;
+  .carousel-caption {
+    bottom: 1.5rem;
   }
   .carousel-caption h2 {
     font-size: 3rem;
@@ -289,15 +276,14 @@ footer li a.link-pink:hover {
     font-size: 0.7rem;
     line-height: 1;
   }
-  .carousel-caption {
-    bottom: 1.5rem;
+  #suscribe {
+    margin-left: 0;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-  .carousel-caption h1 {
-    font-size: 1.5rem;
-    line-height: 1;
+  .carousel-caption {
+    bottom: 3rem;
   }
   .carousel-caption h2 {
     font-size: 5rem;
@@ -311,8 +297,8 @@ footer li a.link-pink:hover {
     font-size: 1.2rem;
     line-height: 1;
   }
-  .carousel-caption {
-    bottom: 3rem;
+  #suscribe {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

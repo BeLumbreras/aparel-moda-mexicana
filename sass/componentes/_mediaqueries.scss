@@ -1,0 +1,45 @@
+@media (min-width: 1200px) {   
+    .navbar-expand-xl .navbar-collapse {
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+    .carousel-caption {
+        bottom: 1.5rem;
+        h2 {
+            font-size: 3rem;
+            line-height: 1;
+        }
+        h5 {
+            font-size: 0.7rem;
+            line-height: 1;
+        }
+        a.btn-pink {
+            font-size: 0.7rem;
+            line-height: 1;
+        }
+    }
+    #suscribe {
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+    .carousel-caption {
+        bottom: 3rem;
+        h2 {
+            font-size: 5rem;
+            line-height: 1;
+        }
+        h5 {
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+        a.btn-pink {
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+    }
+    #suscribe {
+        margin-left: 0;
+    }
+}
