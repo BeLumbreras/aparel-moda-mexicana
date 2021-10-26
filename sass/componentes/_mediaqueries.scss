@@ -3,7 +3,7 @@
         justify-content: center;
     }
 }
-@media only screen and (min-width: 360px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .carousel-caption {
         bottom: 1.5rem;
         h2 {
@@ -18,6 +18,19 @@
             font-size: 0.7rem;
             line-height: 1;
         }
+    }
+    .headerDimensiones {
+        height: $tenPixel*15;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color:$black;
+    }
+   .main__contenido {
+        margin-top:$tenPixel;
+    }
+   .col-footer {
+        padding-bottom:1em;
     }
     #suscribe {
         margin-left: 0;
@@ -38,6 +51,12 @@
             font-size: 1.2rem;
             line-height: 1;
         }
+    }
+    .main__contenido {
+        margin-top:$tenPixel;
+    }
+    .col-footer {
+        padding-bottom:1em;
     }
     #suscribe {
         margin-left: 0;

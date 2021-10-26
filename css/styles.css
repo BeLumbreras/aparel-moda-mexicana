@@ -56,7 +56,7 @@ header #barra__anuncio .barra__anuncio__monto {
 }
 
 header .header__logo img {
-  width: 80px;
+  width: 4em;
   height: auto;
 }
 
@@ -66,10 +66,10 @@ header .header__logo img:hover {
 
 header .header__menu ul li a.nav-link {
   color: #FFF;
-  padding: 3px 10px;
+  padding: 3px 0.5em;
   border-radius: .25rem;
   border: 1px solid #FE006F;
-  margin: 0 10px;
+  margin: 0 0.5em;
 }
 
 header .header__menu ul li a.nav-link:hover {
@@ -82,7 +82,7 @@ header .carousel-caption {
 }
 
 header .carousel-caption h2 {
-  font-size: 5.5rem;
+  font-size: 4rem;
   line-height: 1;
 }
 
@@ -99,24 +99,27 @@ header .carousel-caption a.btn {
 }
 
 header .headerDimensiones, header .header__slide__playeras, header .header__slide__zapatos, header .header__slide__blog, header .header__slide__contacto {
+  height: 20em;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  background-color: #000;
 }
 
 header .header__slide__playeras {
-  background: center center #000 url("../images/playeras-cover.jpg") no-repeat;
+  background-image: url("../images/playeras-cover.jpg");
 }
 
 header .header__slide__zapatos {
-  background: center center #000 url("../images/zapatos-cover.jpg") no-repeat;
+  background-image: url("../images/zapatos-cover.jpg");
 }
 
 header .header__slide__blog {
-  background: center center #000 url("../images/blog-cover.jpg") no-repeat;
+  background-image: url("../images/blog-cover.jpg");
 }
 
 header .header__slide__contacto {
-  background: center center #000 url("../images/contacto-cover.jpg") no-repeat;
+  background-image: url("../images/contacto-cover.jpg");
 }
 
 /* CONTENIDO */
@@ -151,7 +154,7 @@ header .header__slide__contacto {
 
 .texto__titular, .main__contenido h1, .main__contenido h2, .main__contenido h5 a {
   font-family: "Roboto Slab", serif;
-  padding: 5px;
+  padding: 0.25em;
 }
 
 .texto__cuerpo {
@@ -159,7 +162,7 @@ header .header__slide__contacto {
 }
 
 .main__contenido {
-  margin-top: 50px;
+  margin-top: 2.5em;
 }
 
 .main__contenido h1 {
@@ -188,12 +191,12 @@ header .header__slide__contacto {
 }
 
 .main__contenido .main__producto .main__producto__box .main__producto__descripcion {
-  padding-top: 25px;
+  padding-top: 1em;
 }
 
 /*TABLA DE PRODUCTOS*/
 .table th {
-  border-bottom: 1px solid #FFF;
+  border-right: 1px solid #FFF;
   text-align: center;
 }
 
@@ -223,11 +226,11 @@ header .header__slide__contacto {
 
 /* ASIDE */
 .aside__anuncio img {
-  border: 10px solid #FE006F;
+  border: 0.5em solid #FE006F;
 }
 
 .sticky-top {
-  top: 10px;
+  top: 0.5em;
 }
 
 /* FOOTER */
@@ -260,7 +263,7 @@ footer li a.link-pink:hover {
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .carousel-caption {
     bottom: 1.5rem;
   }
@@ -275,6 +278,19 @@ footer li a.link-pink:hover {
   .carousel-caption a.btn-pink {
     font-size: 0.7rem;
     line-height: 1;
+  }
+  .headerDimensiones, header .header__slide__playeras, header .header__slide__zapatos, header .header__slide__blog, header .header__slide__contacto {
+    height: 7.5em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+  }
+  .main__contenido {
+    margin-top: 0.5em;
+  }
+  .col-footer {
+    padding-bottom: 1em;
   }
   #suscribe {
     margin-left: 0;
@@ -296,6 +312,12 @@ footer li a.link-pink:hover {
   .carousel-caption a.btn-pink {
     font-size: 1.2rem;
     line-height: 1;
+  }
+  .main__contenido {
+    margin-top: 0.5em;
+  }
+  .col-footer {
+    padding-bottom: 1em;
   }
   #suscribe {
     margin-left: 0;

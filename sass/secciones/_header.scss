@@ -42,7 +42,7 @@ header {
         bottom: 10rem;
 
         h2 {
-            font-size: 5.5rem;
+            font-size: 4rem;
             line-height: 1;
         }
         h3.display-1 {
@@ -57,23 +57,26 @@ header {
         }
     }
    .headerDimensiones {
-        background-size: cover;
         height: $tenPixel*40;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color:$black;
    }
     .header__slide__playeras {
         @extend .headerDimensiones;
-        background: center center #000 url("../images/playeras-cover.jpg") no-repeat;    
+        background-image: url("../images/playeras-cover.jpg");    
     }
     .header__slide__zapatos {
         @extend .headerDimensiones;
-        background: center center #000 url("../images/zapatos-cover.jpg") no-repeat;
+        background-image: url("../images/zapatos-cover.jpg");
     }
     .header__slide__blog {
         @extend .headerDimensiones;
-        background: center center #000 url("../images/blog-cover.jpg") no-repeat;
+        background-image: url("../images/blog-cover.jpg");
     }
     .header__slide__contacto {
         @extend .headerDimensiones;
-        background: center center #000 url("../images/contacto-cover.jpg") no-repeat;
+        background-image: url("../images/contacto-cover.jpg");
     }
 }
