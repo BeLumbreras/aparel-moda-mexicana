@@ -94,8 +94,16 @@ header .carousel-caption h3.display-1 {
 }
 
 header .carousel-caption a.btn {
-  padding: 1rem 3rem;
   font-size: 1.5rem;
+  padding: 1rem 3rem;
+}
+
+header .carousel-caption.position-right {
+  left: 45%;
+}
+
+header .carousel-caption.position-left {
+  left: 15%;
 }
 
 header .headerDimensiones, header .header__slide__playeras, header .header__slide__zapatos, header .header__slide__blog, header .header__slide__contacto {
@@ -200,30 +208,6 @@ header .header__slide__contacto {
   text-align: center;
 }
 
-/* ANIMACIONES */
-.skew {
-  animation: skew 3s infinite;
-  transform: skew(20deg);
-  animation-direction: alternate;
-}
-
-@keyframes skew {
-  0% {
-    transform: skewX(20deg);
-  }
-  100% {
-    transform: skewX(-20deg);
-  }
-}
-
-.grow {
-  transition: all .2s ease-in-out;
-}
-
-.grow:hover {
-  transform: scale(2);
-}
-
 /* ASIDE */
 .aside__anuncio img {
   border: 0.5em solid #FE006F;
@@ -256,6 +240,30 @@ footer li a.link-pink:hover {
   color: #8F2447;
 }
 
+/* ANIMACIONES */
+.skew {
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(2);
+}
+
 /* BOOTSTRAP CSS MY RULES */
 @media (min-width: 1200px) {
   .navbar-expand-xl .navbar-collapse {
@@ -263,23 +271,37 @@ footer li a.link-pink:hover {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .carousel-caption {
-    bottom: 1.5rem;
+@media only screen and (min-width: 300px) and (max-width: 567px) {
+  header .carousel-caption {
+    bottom: 1rem;
   }
-  .carousel-caption h2 {
-    font-size: 3rem;
-    line-height: 1;
+  header .carousel-caption h2 {
+    font-size: 1.2rem;
+    line-height: 0.7;
   }
-  .carousel-caption h5 {
+  header .carousel-caption h3.display-1 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 0.7;
+  }
+  header .carousel-caption h5 {
     font-size: 0.7rem;
-    line-height: 1;
+    line-height: 0.7;
   }
-  .carousel-caption a.btn-pink {
+  header .carousel-caption p {
+    display: none;
+  }
+  header .carousel-caption a.btn-pink {
     font-size: 0.7rem;
-    line-height: 1;
+    padding: 0.5rem;
   }
-  .headerDimensiones, header .header__slide__playeras, header .header__slide__zapatos, header .header__slide__blog, header .header__slide__contacto {
+  header .carousel-caption.position-right {
+    left: 43%;
+  }
+  header .carousel-caption.position-left {
+    left: 10%;
+  }
+  header .headerDimensiones, header .header__slide__playeras, header .header__slide__zapatos, header .header__slide__blog, header .header__slide__contacto {
     height: 7.5em;
     background-position: center center;
     background-repeat: no-repeat;
@@ -289,29 +311,37 @@ footer li a.link-pink:hover {
   .main__contenido {
     margin-top: 0.5em;
   }
-  .col-footer {
-    padding-bottom: 1em;
-  }
   #suscribe {
     margin-left: 0;
   }
+  .col-footer {
+    padding-bottom: 1em;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-  .carousel-caption {
-    bottom: 3rem;
+@media only screen and (min-width: 567px) and (max-width: 960px) {
+  header .carousel-caption {
+    bottom: 4.5rem;
   }
-  .carousel-caption h2 {
-    font-size: 5rem;
+  header .carousel-caption h2 {
+    font-size: 2rem;
     line-height: 1;
   }
-  .carousel-caption h5 {
+  header .carousel-caption h5 {
     font-size: 1.2rem;
-    line-height: 1;
   }
-  .carousel-caption a.btn-pink {
+  header .carousel-caption h3.display-1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+  }
+  header .carousel-caption a.btn-pink {
     font-size: 1.2rem;
-    line-height: 1;
+  }
+  header .carousel-caption.position-right {
+    left: 37%;
+  }
+  header .carousel-caption.position-left {
+    left: 6%;
   }
   .main__contenido {
     margin-top: 0.5em;
